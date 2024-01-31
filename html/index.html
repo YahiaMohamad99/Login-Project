@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsomn library  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&family=Source+Sans+3:wght@300&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login | Yahia Elkosh</title>
+    <link rel="icon" href="../images/login.jpg">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+
+
+      <div class="window w-75 mx-auto my-5 text-center" id="loginpage">
+        <h1 cla>Smart Login System</h1>
+
+ <!-- Login box  -->
+        <div  id="login">
+          <input
+            type="email"
+            class="form-control bg-transparent my-3 text-white"
+            placeholder="Enter Your Email"
+            id="logemail"
+          />
+          <input
+            type="password"
+            class="form-control bg-transparent my-3 text-white"
+            placeholder="Enter Your Password"
+            id="logpass"
+          />
+          <button class="btn btn-outline-info w-100 my-3" onclick="loginOperation()">
+            Login ya yahia
+          </button>
+          <h6 class="text-warning" id="loginwarning"></h6>
+          <p class="text-white">
+            Don't have an account? <span  onclick="showSignUp()">Sign Up</span>
+          </p>
+        </div>
+<!-- sign up box  -->
+        <div class=" d-none" id="signup">
+          <input
+            type="text"
+            class="form-control bg-transparent my-3 text-white"
+            placeholder="Enter your name"
+            id="username"
+          />
+          <input
+            type="email"
+            class="form-control bg-transparent my-3 text-white"
+            placeholder="Enter your email"
+            id="useremail"
+          />
+          <input
+            type="password"
+            class="form-control bg-transparent my-3 text-white"
+            placeholder="Enter your password"
+            id="userpassword"
+          />
+          <h6 class="text-warning" id="signwarning"></h6>
+          <button class="btn btn-outline-info w-100 my-3" onclick="adduser()">
+            Sign Up
+          </button>
+
+          <p class="text-white">
+            Already have an account? <span  onclick="showLogin()">Login</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+ <div class="home d-flex flex-column   text-white d-none" id="homePage">
+
+    <nav class=" p-1">
+    <div class="container d-flex justify-content-between align-items-center">  
+    <h2> E-Login</h2>
+      <button onclick="logout()" class="btn border-warning text-white">Logout</button></div>
+     </nav>
+
+        <div class="content w-100 h-100  d-flex justify-content-center align-items-center">
+                <div   class="text-box p-5  w-50 mx-auto text-center">
+                  <h2 id="homeContent" class=" text-info">  </h2>
+                </div>
+        </div>
+    </div>
+    
+
+   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mian.js"></script>
+  </body>
+</html>
